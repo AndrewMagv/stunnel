@@ -1,0 +1,6 @@
+# ignore generated openssl x509 files
+.srl
+.cert
+
+# ignore vim tmp file
+*.sw*
