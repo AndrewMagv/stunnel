@@ -13,4 +13,6 @@ RUN pip install awscli
 COPY entrypoint.sh /entrypoint.sh
 COPY proxy.conf /proxy.conf
 
+ENV REF master
+
 ENTRYPOINT ["/entrypoint.sh"]

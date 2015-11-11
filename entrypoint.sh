@@ -6,7 +6,6 @@ if [ -f /etc/environ ]; then
 fi
 
 # pull down init script from launch-config/tlsproxy
-REF=master
 URL="https://raw.githubusercontent.com/AndrewMagv/aws-devops/${REF}"
 curl -sSL -O ${URL}/proxy-init.sh
 chmod +x proxy-init.sh
