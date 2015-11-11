@@ -8,12 +8,9 @@ RUN apt-get update && apt-get install -y \
     stunnel4
 
 RUN curl -sSL https://bootstrap.pypa.io/get-pip.py | python -
-
 RUN pip install awscli
 
-RUN mkdir /trusted
-
 COPY entrypoint.sh /entrypoint.sh
+COPY proxy.conf /proxy.conf
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD [""]
